@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-16",
+    "type": "daily",
+    "title": "안개 낀 증시",
+    "subtitle": "높아진 위험회피 성향, 시간이 필요하다.",
+    "file": "reports/2026-11-16_daily.pdf"
+  },
+  {
     "date": "2026-11-14",
     "type": "daily",
     "title": "코스닥 다시 부활하나",

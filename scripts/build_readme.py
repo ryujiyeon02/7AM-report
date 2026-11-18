@@ -85,7 +85,7 @@ def build():
     pages = render_preview(ROOT / latest["file"]) if latest else []
 
     L = []
-    L.append("# QUANTIFI 7시 리포트\n")
+    L.append("# MIFFY 7시 리포트\n")
     L.append("> 매일 아침 07:00 (일요일 제외) · 06:00 미국장 마감 이후 이슈 반영\n")
     L.append("**English** — A daily Korean-language market brief from QUANTIFI (Sogang University quant society), published at 07:00 KST Monday–Saturday after the U.S. close. It covers U.S. equities, macro, the Korean equity outlook and FX/commodities/bonds. Index forecasts from society discussions are added before key data releases, and quant notes appear occasionally.\n")
     L.append("**페이지 구성**\n")

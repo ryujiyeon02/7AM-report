@@ -19,16 +19,17 @@
 
 ## 🆕 최신 리포트
 
-### [엔비디아발 AI 투매](reports/2026-11-17_daily.pdf)
-*실적 앞둔 경계감, 로봇·소부장으로 시선 이동*  
-2026-11-17 (화) · 📰 Daily
+### [루빈효과 vs 오너 리스크](reports/2026-11-18_daily.pdf)
+*앤트로픽 IPO와 엔비디아에 달린 AI 투심*  
+2026-11-18 (수) · 📰 Daily
 
-<p><a href="reports/2026-11-17_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-17_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-17_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-17_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-17_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-17_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
+<p><a href="reports/2026-11-18_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-18_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-18_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-18_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-18_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-18_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
 
 ## 📚 리포트 목록
 
 | 날짜 | 구분 | 제목 |
 |---|---|---|
+| 2026-11-18 (수) | 📰 Daily | [루빈효과 vs 오너 리스크](reports/2026-11-18_daily.pdf) |
 | 2026-11-17 (화) | 📰 Daily | [엔비디아발 AI 투매](reports/2026-11-17_daily.pdf) |
 | 2026-11-16 (월) | 📰 Daily | [안개 낀 증시](reports/2026-11-16_daily.pdf) |
 | 2026-11-14 (토) | 📰 Daily | [코스닥 다시 부활하나](reports/2026-11-14_daily.pdf) |

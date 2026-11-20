@@ -19,16 +19,17 @@
 
 ## 🆕 최신 리포트
 
-### [진짜로 빅스텝?](reports/2026-11-19_daily.pdf)
-*예상보다 끈질긴 물가상승, 선별 장세 지속*  
-2026-11-19 (목) · 📰 Daily
+### [앤트로픽이 불러올 파장, P or N](reports/2026-11-20_daily.pdf)
+*IPO 흥행에도 AI주 급락, 변동성 확대.*  
+2026-11-20 (금) · 📰 Daily
 
-<p><a href="reports/2026-11-19_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-19_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-19_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-19_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-19_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-19_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
+<p><a href="reports/2026-11-20_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-20_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-20_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-20_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-20_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-20_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
 
 ## 📚 리포트 목록
 
 | 날짜 | 구분 | 제목 |
 |---|---|---|
+| 2026-11-20 (금) | 📰 Daily | [앤트로픽이 불러올 파장, P or N](reports/2026-11-20_daily.pdf) |
 | 2026-11-19 (목) | 📰 Daily | [진짜로 빅스텝?](reports/2026-11-19_daily.pdf) |
 | 2026-11-18 (수) | 📰 Daily | [루빈효과 vs 오너 리스크](reports/2026-11-18_daily.pdf) |
 | 2026-11-17 (화) | 📰 Daily | [엔비디아발 AI 투매](reports/2026-11-17_daily.pdf) |

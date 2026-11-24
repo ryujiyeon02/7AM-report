@@ -1,9 +1,16 @@
 [
   {
+    "date": "2026-11-24",
+    "type": "daily",
+    "title": "강력한 신뢰회복 이벤트",
+    "subtitle": "AI 투자 안개 걷힐까",
+    "file": "reports/2026-11-24_daily.pdf"
+  },
+  {
     "date": "2026-11-23",
     "type": "daily",
     "title": "바닥은 도대체 어디에",
-    "subtitle": "소 읽고 외양간 고치는 식의 증안펀드, 실효성 있을까",
+    "subtitle": "소 잃고 외양간 고치는 식의 증안펀드, 실효성 있을까",
     "file": "reports/2026-11-23_daily.pdf"
   },
   {

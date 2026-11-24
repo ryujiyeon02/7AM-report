@@ -19,16 +19,17 @@
 
 ## 🆕 최신 리포트
 
-### [바닥은 도대체 어디에](reports/2026-11-23_daily.pdf)
-*소 읽고 외양간 고치는 식의 증안펀드, 실효성 있을까*  
-2026-11-23 (월) · 📰 Daily
+### [강력한 신뢰회복 이벤트](reports/2026-11-24_daily.pdf)
+*AI 투자 안개 걷힐까*  
+2026-11-24 (화) · 📰 Daily
 
-<p><a href="reports/2026-11-23_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-23_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-23_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-23_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-23_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-23_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
+<p><a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
 
 ## 📚 리포트 목록
 
 | 날짜 | 구분 | 제목 |
 |---|---|---|
+| 2026-11-24 (화) | 📰 Daily | [강력한 신뢰회복 이벤트](reports/2026-11-24_daily.pdf) |
 | 2026-11-23 (월) | 📰 Daily | [바닥은 도대체 어디에](reports/2026-11-23_daily.pdf) |
 | 2026-11-20 (금) | 📰 Daily | [앤트로픽이 불러올 파장, P or N](reports/2026-11-20_daily.pdf) |
 | 2026-11-19 (목) | 📰 Daily | [진짜로 빅스텝?](reports/2026-11-19_daily.pdf) |

@@ -19,16 +19,17 @@
 
 ## 🆕 최신 리포트
 
-### [강력한 신뢰회복 이벤트](reports/2026-11-24_daily.pdf)
-*AI 투자 안개 걷힐까*  
-2026-11-24 (화) · 📰 Daily
+### [하루짜리 복귀효과는 숏스퀴즈?](reports/2026-11-25_daily.pdf)
+*숏스퀴즈, 데드캣바운스, 차익실현, 귀걸이, 코걸이*  
+2026-11-25 (수) · 📰 Daily
 
-<p><a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-24_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
+<p><a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
 
 ## 📚 리포트 목록
 
 | 날짜 | 구분 | 제목 |
 |---|---|---|
+| 2026-11-25 (수) | 📰 Daily | [하루짜리 복귀효과는 숏스퀴즈?](reports/2026-11-25_daily.pdf) |
 | 2026-11-24 (화) | 📰 Daily | [강력한 신뢰회복 이벤트](reports/2026-11-24_daily.pdf) |
 | 2026-11-23 (월) | 📰 Daily | [바닥은 도대체 어디에](reports/2026-11-23_daily.pdf) |
 | 2026-11-20 (금) | 📰 Daily | [앤트로픽이 불러올 파장, P or N](reports/2026-11-20_daily.pdf) |

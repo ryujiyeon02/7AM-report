@@ -79,6 +79,30 @@ def render_preview(pdf_path):
     return names
 
 
+def thesis_section():
+    """tracking/status.json(scripts/track_theses.py 결과)이 있으면 전망 추적 섹션을 만듦"""
+    st = ROOT / "tracking" / "status.json"
+    if not st.exists():
+        return []
+    rows = json.loads(st.read_text(encoding="utf-8"))
+    if not rows:
+        return []
+    L = ["## 📌 전망 추적\n",
+         "리포트에서 검증 가능한 전망을 골라 **판정 기준을 미리 정해** 등록하고, 이후 실제 주가로 추적합니다. "
+         "동일가중 바스켓 기준이며 배당·비용은 반영하지 않습니다.\n",
+         "| ID | 전망 | 기준일 | 판정 | 현재 | 상태 |",
+         "|---|---|---|---|---|---|"]
+    for r in rows:
+        L.append(f"| [{r['id']}](theses/{r['id']}.md) | {r['title']} | {r['baseline'][5:].replace('-', '/')} "
+                 f"| {r['judge_date']} | {r['now']} | {r['status']} |")
+    L.append("")
+    imgs = " ".join(f'<a href="theses/{r["id"]}.md"><img src="{r["chart"]}" width="32%" alt="{r["id"]}"></a>'
+                    for r in rows)
+    L.append(f"<p>{imgs}</p>\n")
+    L.append(f"<sub>마지막 갱신: {rows[0]['last']} 종가 · 데이터: KRX 일별 종가</sub>\n")
+    return L
+
+
 def build():
     items = sorted(load(), key=sort_key, reverse=True)
     latest = items[0] if items else None
@@ -107,6 +131,8 @@ def build():
             for i, n in enumerate(pages)
         )
         L.append(f"<p>{imgs.strip()}</p>\n")
+
+    L.extend(thesis_section())
 
     L.append("## 📚 리포트 목록\n")
     L.append("| 날짜 | 구분 | 제목 |")

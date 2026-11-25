@@ -1,0 +1,32 @@
+[
+  {
+    "id": "F-001",
+    "title": "반도체 연말 혼조세 유지",
+    "baseline": "2026-11-24",
+    "last": "2026-11-25",
+    "judge_date": "2026-12-30",
+    "now": "바스켓 -6.9% (허용 ±10%)",
+    "status": "⏳ 진행 중 · 범위 안",
+    "chart": "tracking/charts/F-001.png"
+  },
+  {
+    "id": "F-002",
+    "title": "로봇 → 대형 배터리 → 양극재 순환매",
+    "baseline": "2026-11-24",
+    "last": "2026-11-25",
+    "judge_date": "D+20 / D+40",
+    "now": "로봇 +9.8%p · 대형 배터리 +5.3%p · 양극재 +4.3%p",
+    "status": "⏳ 진행 중 (D+1)",
+    "chart": "tracking/charts/F-002.png"
+  },
+  {
+    "id": "F-003",
+    "title": "로봇주 시장 대비 강세 지속",
+    "baseline": "2026-11-24",
+    "last": "2026-11-25",
+    "judge_date": "D+10 / 2027-01-08",
+    "now": "초과수익 +9.8%p",
+    "status": "⏳ 진행 중",
+    "chart": "tracking/charts/F-003.png"
+  }
+]

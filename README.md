@@ -25,6 +25,20 @@
 
 <p><a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
 
+## 📌 전망 추적
+
+리포트에서 검증 가능한 전망을 골라 **판정 기준을 미리 정해** 등록하고, 이후 실제 주가로 추적합니다. 동일가중 바스켓 기준이며 배당·비용은 반영하지 않습니다.
+
+| ID | 전망 | 기준일 | 판정 | 현재 | 상태 |
+|---|---|---|---|---|---|
+| [F-001](theses/F-001.md) | 반도체 연말 혼조세 유지 | 11/24 | 2026-12-30 | 바스켓 -6.9% (허용 ±10%) | ⏳ 진행 중 · 범위 안 |
+| [F-002](theses/F-002.md) | 로봇 → 대형 배터리 → 양극재 순환매 | 11/24 | D+20 / D+40 | 로봇 +9.8%p · 대형 배터리 +5.3%p · 양극재 +4.3%p | ⏳ 진행 중 (D+1) |
+| [F-003](theses/F-003.md) | 로봇주 시장 대비 강세 지속 | 11/24 | D+10 / 2027-01-08 | 초과수익 +9.8%p | ⏳ 진행 중 |
+
+<p><a href="theses/F-001.md"><img src="tracking/charts/F-001.png" width="32%" alt="F-001"></a> <a href="theses/F-002.md"><img src="tracking/charts/F-002.png" width="32%" alt="F-002"></a> <a href="theses/F-003.md"><img src="tracking/charts/F-003.png" width="32%" alt="F-003"></a></p>
+
+<sub>마지막 갱신: 2026-11-25 종가 · 데이터: KRX 일별 종가</sub>
+
 ## 📚 리포트 목록
 
 | 날짜 | 구분 | 제목 |

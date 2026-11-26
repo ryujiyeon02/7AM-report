@@ -19,11 +19,11 @@
 
 ## 🆕 최신 리포트
 
-### [하루짜리 복귀효과는 숏스퀴즈?](reports/2026-11-25_daily.pdf)
-*숏스퀴즈, 데드캣바운스, 차익실현, 귀걸이, 코걸이*  
-2026-11-25 (수) · 📰 Daily
+### [금리 인상은 피할 수 없다.](reports/2026-11-26_daily.pdf)
+*주식시장에 계속되는 악재*  
+2026-11-26 (목) · 📰 Daily
 
-<p><a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-25_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
+<p><a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
 
 ## 📌 전망 추적
 
@@ -31,18 +31,19 @@
 
 | ID | 전망 | 기준일 | 판정 | 현재 | 상태 |
 |---|---|---|---|---|---|
-| [F-001](theses/F-001.md) | 반도체 연말 혼조세 유지 | 11/24 | 2026-12-30 | 바스켓 -6.9% (허용 ±10%) | ⏳ 진행 중 · 범위 안 |
-| [F-002](theses/F-002.md) | 로봇 → 대형 배터리 → 양극재 순환매 | 11/24 | D+20 / D+40 | 로봇 +9.8%p · 대형 배터리 +5.3%p · 양극재 +4.3%p | ⏳ 진행 중 (D+1) |
-| [F-003](theses/F-003.md) | 로봇주 시장 대비 강세 지속 | 11/24 | D+10 / 2027-01-08 | 초과수익 +9.8%p | ⏳ 진행 중 |
+| [F-001](theses/F-001.md) | 반도체 연말 혼조세 유지 | 11/24 | 2026-12-30 | 바스켓 -5.4% (허용 ±10%) | ⏳ 진행 중 · 범위 안 |
+| [F-002](theses/F-002.md) | 로봇 → 대형 배터리 → 양극재 순환매 | 11/24 | D+20 / D+40 | 로봇 +10.3%p · 대형 배터리 +4.7%p · 양극재 +6.9%p | ⏳ 진행 중 (D+2) |
+| [F-003](theses/F-003.md) | 로봇주 시장 대비 강세 지속 | 11/24 | D+10 / 2027-01-08 | 초과수익 +10.3%p | ⏳ 진행 중 |
 
 <p><a href="theses/F-001.md"><img src="tracking/charts/F-001.png" width="32%" alt="F-001"></a> <a href="theses/F-002.md"><img src="tracking/charts/F-002.png" width="32%" alt="F-002"></a> <a href="theses/F-003.md"><img src="tracking/charts/F-003.png" width="32%" alt="F-003"></a></p>
 
-<sub>마지막 갱신: 2026-11-25 종가 · 데이터: KRX 일별 종가</sub>
+<sub>마지막 갱신: 2026-11-26 종가 · 데이터: KRX 일별 종가</sub>
 
 ## 📚 리포트 목록
 
 | 날짜 | 구분 | 제목 |
 |---|---|---|
+| 2026-11-26 (목) | 📰 Daily | [금리 인상은 피할 수 없다.](reports/2026-11-26_daily.pdf) |
 | 2026-11-25 (수) | 📰 Daily | [하루짜리 복귀효과는 숏스퀴즈?](reports/2026-11-25_daily.pdf) |
 | 2026-11-24 (화) | 📰 Daily | [강력한 신뢰회복 이벤트](reports/2026-11-24_daily.pdf) |
 | 2026-11-23 (월) | 📰 Daily | [바닥은 도대체 어디에](reports/2026-11-23_daily.pdf) |

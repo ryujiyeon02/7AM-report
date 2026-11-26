@@ -123,6 +123,13 @@ def plot(t, series, base, out, unit="%", extra=None):
 
 
 def evaluate(t, px):
+    if t["type"] == "event":
+        res = {"id": t["id"], "title": t["title"], "baseline": t["baseline"],
+               "judge_date": t["final_date"], "now": t.get("context", "-"), "chart": None,
+               "last": max(px["KOSPI"])}
+        o = t.get("outcome")
+        res["status"] = "⏳ 결과 대기" if o is None else ("✅ 적중" if o else "❌ 빗나감")
+        return res
     dates = sorted(px[t["benchmark"]])
     base = t["baseline"]
     last = dates[-1]
@@ -187,6 +194,21 @@ def evaluate(t, px):
         res["chart_title"] = "Robotics basket vs. KOSPI"
         plot(t, [(g, groups[g], SERIES[0], False), ("KOSPI", bench, BENCH, True)], base, res)
 
+    elif t["type"] == "relative":
+        a, b = list(t["groups"])
+        ko = {"Cosmetics": "화장품", "Semis": "반도체"}
+        cur = groups[a][last] - groups[b][last]
+        res["judge_date"] = t["final_date"]
+        res["now"] = f"{ko.get(a, a)} {fmt(groups[a][last])} · {ko.get(b, b)} {fmt(groups[b][last])} (차 {fmt(cur)}p)"
+        if last >= t["final_date"]:
+            fd = max(d for d in groups[a] if d <= t["final_date"])
+            res["status"] = "✅ 적중" if groups[a][fd] > groups[b][fd] else "❌ 빗나감"
+        else:
+            res["status"] = "⏳ 진행 중" + (" · 앞섬" if cur > 0 else " · 뒤짐" if cur < 0 else "")
+        res["chart_title"] = f"{a} vs. {b} basket"
+        plot(t, [(a, groups[a], SERIES[1], False), (b, groups[b], SERIES[0], False),
+                 ("KOSPI", bench, BENCH, True)], base, res)
+
     res["chart"] = f"tracking/charts/{t['id']}.png"
     return res
 
@@ -196,7 +218,7 @@ def write_doc(t, r, names):
         f"# {t['id']} {t['title']}",
         "",
         f"- **등록일:** {t['created']} · **출처:** [{t['source_report'].split('/')[-1]}](../{t['source_report']})",
-        f"- **기준일:** {t['baseline']} 종가 (리포트 발행 07:00, 장 시작 전 작성)",
+        f"- **기준일:** {t['baseline']}" + ("" if t["type"] == "event" else " 종가") + f" ({t.get('baseline_note', '리포트 발행 07:00, 장 시작 전 작성')})",
         f"- **벤치마크:** {t['benchmark']}",
         "",
         "## 전망",
@@ -207,24 +229,16 @@ def write_doc(t, r, names):
         "",
         t["rule"],
         "",
-        "## 관찰 대상",
-        "",
-        "| 그룹 | 종목 |",
-        "|---|---|",
     ]
-    for g, cs in t["groups"].items():
-        lines.append(f"| {g} | " + ", ".join(f"{names.get(c, c)} ({c})" for c in cs) + " |")
-    lines += [
-        "",
-        "## 현재 상태",
-        "",
-        f"{r['status']} — {r['now']} (기준: {r['last']} 종가)",
-        "",
-        f"![{t['id']}](../{r['chart']})",
-        "",
-        "*동일가중 바스켓, 배당·비용 미반영. 데이터: KRX 일별 종가.*",
-        "",
-    ]
+    if t["groups"]:
+        lines += ["## 관찰 대상", "", "| 그룹 | 종목 |", "|---|---|"]
+        for g, cs in t["groups"].items():
+            lines.append(f"| {g} | " + ", ".join(f"{names.get(c, c)} ({c})" for c in cs) + " |")
+        lines += ["", "## 현재 상태", "", f"{r['status']} — {r['now']} (기준: {r['last']} 종가)", "",
+                  f"![{t['id']}](../{r['chart']})", "",
+                  "*동일가중 바스켓, 배당·비용 미반영. 데이터: KRX 일별 종가.*", ""]
+    else:
+        lines += ["## 현재 상태", "", f"{r['status']} — {r['now']}", ""]
     (THESES_DIR / f"{t['id']}.md").write_text("\n".join(lines), encoding="utf-8")
 
 

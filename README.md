@@ -34,8 +34,10 @@
 | [F-001](theses/F-001.md) | 반도체 연말 혼조세 유지 | 11/24 | 2026-12-30 | 바스켓 -5.4% (허용 ±10%) | ⏳ 진행 중 · 범위 안 |
 | [F-002](theses/F-002.md) | 로봇 → 대형 배터리 → 양극재 순환매 | 11/24 | D+20 / D+40 | 로봇 +10.3%p · 대형 배터리 +4.7%p · 양극재 +6.9%p | ⏳ 진행 중 (D+2) |
 | [F-003](theses/F-003.md) | 로봇주 시장 대비 강세 지속 | 11/24 | D+10 / 2027-01-08 | 초과수익 +10.3%p | ⏳ 진행 중 |
+| [F-004](theses/F-004.md) | 연말까지 화장품 > 반도체 | 11/26 | 2026-12-30 | 화장품 +0.0% · 반도체 +0.0% (차 +0.0%p) | ⏳ 진행 중 |
+| [F-005](theses/F-005.md) | 12월 FOMC 기준금리 인상 | 11/26 | 2026-12-09 | 등록 시점 CME FedWatch 12월 인상 확률 97.8% (리포트 기재) | ⏳ 결과 대기 |
 
-<p><a href="theses/F-001.md"><img src="tracking/charts/F-001.png" width="32%" alt="F-001"></a> <a href="theses/F-002.md"><img src="tracking/charts/F-002.png" width="32%" alt="F-002"></a> <a href="theses/F-003.md"><img src="tracking/charts/F-003.png" width="32%" alt="F-003"></a></p>
+<p><a href="theses/F-001.md"><img src="tracking/charts/F-001.png" width="32%" alt="F-001"></a> <a href="theses/F-002.md"><img src="tracking/charts/F-002.png" width="32%" alt="F-002"></a> <a href="theses/F-003.md"><img src="tracking/charts/F-003.png" width="32%" alt="F-003"></a> <a href="theses/F-004.md"><img src="tracking/charts/F-004.png" width="32%" alt="F-004"></a></p>
 
 <sub>마지막 갱신: 2026-11-26 종가 · 데이터: KRX 일별 종가</sub>
 

@@ -97,7 +97,7 @@ def thesis_section():
                  f"| {r['judge_date']} | {r['now']} | {r['status']} |")
     L.append("")
     imgs = " ".join(f'<a href="theses/{r["id"]}.md"><img src="{r["chart"]}" width="32%" alt="{r["id"]}"></a>'
-                    for r in rows)
+                    for r in rows if r.get("chart"))
     L.append(f"<p>{imgs}</p>\n")
     L.append(f"<sub>마지막 갱신: {rows[0]['last']} 종가 · 데이터: KRX 일별 종가</sub>\n")
     return L

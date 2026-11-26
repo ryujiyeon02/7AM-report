@@ -28,5 +28,25 @@
     "now": "초과수익 +10.3%p",
     "status": "⏳ 진행 중",
     "chart": "tracking/charts/F-003.png"
+  },
+  {
+    "id": "F-004",
+    "title": "연말까지 화장품 > 반도체",
+    "baseline": "2026-11-26",
+    "last": "2026-11-26",
+    "judge_date": "2026-12-30",
+    "now": "화장품 +0.0% · 반도체 +0.0% (차 +0.0%p)",
+    "status": "⏳ 진행 중",
+    "chart": "tracking/charts/F-004.png"
+  },
+  {
+    "id": "F-005",
+    "title": "12월 FOMC 기준금리 인상",
+    "baseline": "2026-11-26",
+    "judge_date": "2026-12-09",
+    "now": "등록 시점 CME FedWatch 12월 인상 확률 97.8% (리포트 기재)",
+    "chart": null,
+    "last": "2026-11-26",
+    "status": "⏳ 결과 대기"
   }
 ]

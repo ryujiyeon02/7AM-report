@@ -130,6 +130,8 @@ def evaluate(t, px):
         o = t.get("outcome")
         res["status"] = "⏳ 결과 대기" if o is None else ("✅ 적중" if o else "❌ 빗나감")
         return res
+    if t["type"] == "level_interval":
+        return evaluate_level(t, px)
     dates = sorted(px[t["benchmark"]])
     base = t["baseline"]
     last = dates[-1]
@@ -213,12 +215,60 @@ def evaluate(t, px):
     return res
 
 
+def evaluate_level(t, px):
+    """금리 등 수준 변수의 구간 전망"""
+    ser = px[t["series"]]
+    ds = sorted(ser)
+    last = ds[-1]
+    lo, hi, pt = t["low"], t["high"], t["point"]
+    res = {"id": t["id"], "title": t["title"], "baseline": t["baseline"], "last": last,
+           "judge_date": t["target_date"]}
+    res["now"] = f"{ser[last]:.2f}% ({last[5:].replace('-', '/')}) · 범위 {lo:.2f}~{hi:.2f}%"
+    if t["target_date"] in ser:
+        v = ser[t["target_date"]]
+        err = (v - pt) * 100
+        res["status"] = ("✅ 적중" if lo <= v <= hi else "❌ 빗나감") + f" (오차 {err:+.0f}bp)"
+    else:
+        res["status"] = "⏳ 진행 중" + (" · 범위 안" if lo <= ser[last] <= hi else " · 범위 밖")
+
+    fig, ax = plt.subplots(figsize=(6.4, 3.2), dpi=150)
+    xs = list(range(len(ds)))
+    ax.axhspan(lo, hi, color="#eef3fb", zorder=0)
+    ax.axhline(pt, color=SERIES[1], linewidth=1.2, linestyle="--", zorder=2, label=f"AR forecast {pt:.2f}%")
+    ax.plot(xs, [ser[d] for d in ds], color=SERIES[0], linewidth=2, zorder=3, label="DGS10")
+    ax.plot(xs[-1], ser[last], "o", ms=4, color=SERIES[0], zorder=4)
+    ax.annotate(f"{ser[last]:.2f}%", (xs[-1], ser[last]), xytext=(6, 0), textcoords="offset points",
+                va="center", fontsize=8, color=TEXT)
+    bx = ds.index(t["baseline"]) if t["baseline"] in ds else None
+    if bx is not None:
+        ax.axvline(bx, color=TEXT2, linewidth=0.8, linestyle=":")
+        ax.annotate(f"baseline {t['baseline'][5:].replace('-', '/')}", (bx, 0), xycoords=("data", "axes fraction"),
+                    xytext=(-3, 4), textcoords="offset points", ha="right", fontsize=7, color=TEXT2)
+    ax.set_xticks(xs)
+    ax.set_xticklabels([d[5:].replace("-", "/") for d in ds])
+    ax.set_xlim(-0.3, len(ds) - 1 + 0.9)
+    ax.set_title(f"{t['id']}  U.S. 10Y yield · band {lo:.2f}–{hi:.2f}% · target {t['target_date'][5:].replace('-', '/')}", loc="left", fontsize=10, color=TEXT, pad=8)
+    ax.grid(axis="y", color=GRID, linewidth=0.8)
+    for sp in ("top", "right"):
+        ax.spines[sp].set_visible(False)
+    for sp in ("left", "bottom"):
+        ax.spines[sp].set_color("#bdbdbd")
+    ax.tick_params(colors=TEXT2, labelsize=8)
+    ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:.2f}%"))
+    ax.legend(loc="upper left", bbox_to_anchor=(0, -0.12), ncol=3, frameon=False, fontsize=8)
+    fig.tight_layout()
+    fig.savefig(CHARTS / f"{t['id']}.png", facecolor="white")
+    plt.close(fig)
+    res["chart"] = f"tracking/charts/{t['id']}.png"
+    return res
+
+
 def write_doc(t, r, names):
     lines = [
         f"# {t['id']} {t['title']}",
         "",
         f"- **등록일:** {t['created']} · **출처:** [{t['source_report'].split('/')[-1]}](../{t['source_report']})",
-        f"- **기준일:** {t['baseline']}" + ("" if t["type"] == "event" else " 종가") + f" ({t.get('baseline_note', '리포트 발행 07:00, 장 시작 전 작성')})",
+        f"- **기준일:** {t['baseline']}" + ("" if t["type"] in ("event", "level_interval") else " 종가") + f" ({t.get('baseline_note', '리포트 발행 07:00, 장 시작 전 작성')})",
         f"- **벤치마크:** {t['benchmark']}",
         "",
         "## 전망",
@@ -230,7 +280,12 @@ def write_doc(t, r, names):
         t["rule"],
         "",
     ]
-    if t["groups"]:
+    if t["type"] == "level_interval":
+        lines += ["## 관찰 대상", "", f"{names.get(t['series'], t['series'])}", "",
+                  "## 현재 상태", "", f"{r['status']} — {r['now']}", "",
+                  f"![{t['id']}](../{r['chart']})", "",
+                  "*데이터: FRED DGS10 (미 연준 H.15). FRED 게시 지연으로 최근 1~2일이 빠질 수 있음.*", ""]
+    elif t["groups"]:
         lines += ["## 관찰 대상", "", "| 그룹 | 종목 |", "|---|---|"]
         for g, cs in t["groups"].items():
             lines.append(f"| {g} | " + ", ".join(f"{names.get(c, c)} ({c})" for c in cs) + " |")

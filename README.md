@@ -19,11 +19,11 @@
 
 ## 🆕 최신 리포트
 
-### [금리 인상은 피할 수 없다.](reports/2026-11-26_daily.pdf)
-*주식시장에 계속되는 악재*  
-2026-11-26 (목) · 📰 Daily
+### [11월 마지막 주 : 퀀트 분석](reports/2026-11-27_quant.pdf)
+*특별호: 퀀트 분석*  
+2026-11-27 (금) · 📊 퀀트 분석
 
-<p><a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-26_daily.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
+<p><a href="reports/2026-11-27_quant.pdf"><img src="previews/latest-1.png" width="32%" alt="p.1"></a> <a href="reports/2026-11-27_quant.pdf"><img src="previews/latest-2.png" width="32%" alt="p.2"></a> <a href="reports/2026-11-27_quant.pdf"><img src="previews/latest-3.png" width="32%" alt="p.3"></a> <a href="reports/2026-11-27_quant.pdf"><img src="previews/latest-4.png" width="32%" alt="p.4"></a> <a href="reports/2026-11-27_quant.pdf"><img src="previews/latest-5.png" width="32%" alt="p.5"></a> <a href="reports/2026-11-27_quant.pdf"><img src="previews/latest-6.png" width="32%" alt="p.6"></a></p>
 
 ## 📌 전망 추적
 
@@ -45,6 +45,7 @@
 
 | 날짜 | 구분 | 제목 |
 |---|---|---|
+| 2026-11-27 (금) | 📊 퀀트 분석 | [11월 마지막 주 : 퀀트 분석](reports/2026-11-27_quant.pdf) |
 | 2026-11-26 (목) | 📰 Daily | [금리 인상은 피할 수 없다.](reports/2026-11-26_daily.pdf) |
 | 2026-11-25 (수) | 📰 Daily | [하루짜리 복귀효과는 숏스퀴즈?](reports/2026-11-25_daily.pdf) |
 | 2026-11-24 (화) | 📰 Daily | [강력한 신뢰회복 이벤트](reports/2026-11-24_daily.pdf) |

@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-27",
+    "type": "quant",
+    "title": "11월 마지막 주 : 퀀트 분석",
+    "subtitle": "특별호: 퀀트 분석",
+    "file": "reports/2026-11-27_quant.pdf"
+  },
+  {
     "date": "2026-11-26",
     "type": "daily",
     "title": "금리 인상은 피할 수 없다.",
